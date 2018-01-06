@@ -5,7 +5,7 @@
 
 @section('content')
 
-    <se class="content-wrapper col-lg-10 col-lg-offset-1" style="min-height: 700px;">
+    <se class="content-wrapper col-lg-12 col-lg-offset-1" style="min-height: 700px;">
         <section class="content-header">
         <h1><i class="fa fa-key"></i>Available Permissions</h1>
 

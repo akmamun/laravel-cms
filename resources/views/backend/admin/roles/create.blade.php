@@ -6,7 +6,7 @@
     <div class='content-wrapper col-lg-12' style="min-height: 700px;">
         <div class="col-lg-4 col-lg-offset-2">
     <section class="content-header">
-        <h1><i class='fa fa-key'></i> Add Role</h1>
+        <h1><i class='fa fa-key'></i> Assign User Role </h1>
     </section>
         <hr>
 
@@ -29,7 +29,7 @@
             @endforeach
         </div>
 
-        {{ Form::submit('Add', array('class' => 'btn btn-primary')) }}
+        {{ Form::submit('Save User Role', array('class' => 'btn btn-primary')) }}
 
         {{ Form::close() }}
         </section>

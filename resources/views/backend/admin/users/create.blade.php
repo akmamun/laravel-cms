@@ -25,6 +25,7 @@
                 </div>
 
                 <div class='form-group'>
+                    {{ Form::label('roll', 'Give Role') }}<br>
                     @foreach ($roles as $role)
                         {{ Form::checkbox('roles[]',  $role->id ) }}
                         {{ Form::label($role->name, ucfirst($role->name)) }}<br>

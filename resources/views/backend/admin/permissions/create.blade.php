@@ -16,7 +16,7 @@
         {{ Form::open(array('url' => 'permissions')) }}
 
         <div class="form-group">
-            {{ Form::label('name', 'Name') }}
+            {{ Form::label('name', 'Permission Name') }}
             {{ Form::text('name', '', array('class' => 'form-control')) }}
         </div><br>
         @if(!$roles->isEmpty()){{--//If no roles exist yet--}}
@@ -29,7 +29,7 @@
         @endforeach
         @endif
         <br>
-        {{ Form::submit('Add', array('class' => 'btn btn-primary')) }}
+        {{ Form::submit('Save', array('class' => 'btn btn-primary')) }}
 
         {{ Form::close() }}
         </section>

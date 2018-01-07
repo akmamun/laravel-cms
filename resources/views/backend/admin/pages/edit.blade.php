@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', '| Edit Post')
+@section('title', '| Edit Page')
 
 @section('content')
     <div class="content-wrapper" style="min-height: 700px;">
@@ -8,7 +8,7 @@
         <div class="col-md-8 col-md-offset-2">
             <h1>Edit Post</h1>
             <hr>
-            {{ Form::model($post, array('route' => array('posts.update', $post->id), 'method' => 'PUT')) }}
+            {{ Form::model($page, array('route' => array('pages.update', $page->id), 'method' => 'PUT')) }}
             <div class="form-group">
                 {{ Form::label('title', 'Title') }}
                 {{ Form::text('title', null, array('class' => 'form-control')) }}<br>

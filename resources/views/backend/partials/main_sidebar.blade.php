@@ -78,8 +78,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> Add Pages</a></li>
-                    <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Manage Pages</a></li>
+                    <li><a href="{{route('pages.create')}}"><i class="fa fa-circle-o"></i> Add Pages</a></li>
+                    <li><a href="{{route('pages.index')}}"><i class="fa fa-circle-o"></i> Manage Pages</a></li>
                 </ul>
             </li>
             <li class="treeview">
@@ -91,8 +91,8 @@
             </span>
                 </a>
                 <ul class="treeview-menu">
-                    <li><a href="pages/UI/general.html"><i class="fa fa-circle-o"></i> Add Files</a></li>
-                    <li><a href="pages/UI/icons.html"><i class="fa fa-circle-o"></i> Manage Files</a></li>
+                    <li><a href=""><i class="fa fa-circle-o"></i> Add Files</a></li>
+                    <li><a href=""><i class="fa fa-circle-o"></i> Manage Files</a></li>
                 </ul>
             </li>
             <li class="treeview">

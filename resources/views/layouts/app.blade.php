@@ -29,7 +29,6 @@
         <link rel="stylesheet" href="{{ URL::asset('backend/assets/css/skins/_all-skins.min.css') }}">
         <link rel="stylesheet" href="{{ URL::asset('backend/jvectormap/jquery-jvectormap.css') }}">
         <link rel="stylesheet" href="{{ URL::asset('backend/assets/css/AdminLTE.min.css') }}">
-
     @endif
 </head>
 <body @if(auth()->check())class="hold-transition skin-blue sidebar-mini"@endif >
@@ -49,6 +48,16 @@
     <!-- iCheck -->
     <script src="{{ URL::asset('backend/iCheck/icheck.min.js') }}"></script>
     <script src="{{ URL::asset('backend/assets/js/adminlte.js') }}"></script>
+    <script src="{{ URL::asset('backend/ckeditor/ckeditor.js') }}"></script>
+    <script>
+        $(function () {
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            CKEDITOR.replace('editor1');
+        })
+    </script>
+
+
     <script>
         $(function () {
             $('input').iCheck({

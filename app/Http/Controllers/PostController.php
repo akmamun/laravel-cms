@@ -12,7 +12,7 @@ use Session;
 class PostController extends Controller {
 
     public function __construct() {
-        $this->middleware(['auth','clearance' ])->except('index', 'show');
+        $this->middleware(['auth', ])->except('index', 'show');
     }
 
     /**
@@ -22,8 +22,7 @@ class PostController extends Controller {
      */
 
     public function index() {
-        $posts = Post::orderby('id', 'desc')->paginate(5); //show only 5 items at a time in descending order
-
+        $posts = Post::orderby('id', 'desc')->paginate(5);
         return view('backend.admin.posts.index', compact('posts'));
     }
 

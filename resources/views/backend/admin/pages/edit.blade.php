@@ -12,8 +12,15 @@
             <div class="form-group">
                 {{ Form::label('title', 'Title') }}
                 {{ Form::text('title', null, array('class' => 'form-control')) }}<br>
+                {{ Form::label('slug', 'Slug Field') }}
+                {{ Form::text('slug', null, array('class' => 'form-control')) }}<br>
                 {{ Form::label('body', 'Post Body') }}
                 {{ Form::textarea('body', null, array('class' => 'form-control')) }}<br>
+                <div class="form-group">
+                    <label for="image">Upload Background</label>
+                    <input type="file" id="background" name="background" value="">
+                    <p class="help-block">PNG JPG IMAGE</p>
+                </div>
                 {{ Form::submit('Save', array('class' => 'btn btn-primary')) }}
                 {{ Form::close() }}
             </div>

@@ -85,7 +85,7 @@
             <li class="treeview">
                 <a href="#">
                     <i class="fa fa-laptop"></i>
-                    <span>Files Manager</span>
+                    <span> Files Manager</span>
                     <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -93,6 +93,19 @@
                 <ul class="treeview-menu">
                     <li><a href=""><i class="fa fa-circle-o"></i> Add Files</a></li>
                     <li><a href=""><i class="fa fa-circle-o"></i> Manage Files</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-laptop"></i>
+                    <span> Categories</span>
+                    <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href=""><i class="fa fa-circle-o"></i> Add Category</a></li>
+                    <li><a href=""><i class="fa fa-circle-o"></i> Manage Category</a></li>
                 </ul>
             </li>
             <li class="treeview">

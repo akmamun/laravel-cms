@@ -6,16 +6,20 @@
 @section('content')
 
     <div class="content-wrapper" style="min-height: 700px;">
+        <div class="col-lg-12">
         <section class="content-header">
-        <h1><i class="fa fa-lock"></i> User Administration <a href="{{ route('roles.index') }}" class="btn btn-default pull-right">Roles</a>
+        <h1><a href="{{ route('roles.index') }}" class="btn btn-default pull-right">Roles</a>
             <a href="{{ route('permissions.index') }}" class="btn btn-default pull-right">Permissions</a></h1>
         </section>
         <hr>
-        <div class="table-responsive">
-            <section class="content">
-            <table id= "userstable" class="table table-striped table-bordered" cellspacing="0" width="100%">
-
-                <thead>
+        <section class="content">
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title" style="text-align: center">User Admistrations</h3>
+            </div>
+            <div class="box-body">
+                <table id="example1" class="table table-bordered table-striped">
+                    <thead>
                 <tr>
                     <th>Name</th>
                     <th>Email</th>
@@ -24,7 +28,6 @@
                     <th>Operations</th>
                 </tr>
                 </thead>
-
                 <tbody>
                 @foreach ($users as $user)
                     <tr>
@@ -37,15 +40,14 @@
                             {!! Form::open(['method' => 'DELETE', 'route' => ['users.destroy', $user->id] ]) !!}
                             {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
                             {!! Form::close() !!}
-
                         </td>
                     </tr>
                 @endforeach
                 </tbody>
-
             </table>
-
-            </section>
+            </div>
+        </div>
+        </section>
         </div>
     </div>
 

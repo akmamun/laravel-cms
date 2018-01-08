@@ -17,7 +17,7 @@
                     {{ Form::text('slug', null, array('class' => 'form-control')) }}
                 </div>
                 <div class="form-group">
-                    <label for="image">Header Background</label>
+                    <label for="background">Header Background</label>
                     <input type="file" id="image">
                     <p class="help-block">PNG JPG IMAGE</p>
                 </div>
@@ -27,14 +27,14 @@
                             <h3 class="box-title">Post Details</h3>
                         </div>
                         <div class="box-body pad">
-                        <textarea id="editor1" name="editor1" rows="5" cols="50"
+                        <textarea id="editor1" name="body" rows="5" cols="50"
                                   style="visibility: hidden; display: none;"></textarea>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     {{ Form::label('category', 'Category Post') }}
-                    {{ Form::text('slug', null, array('class' => 'form-control')) }}
+                    {{ Form::text('category', null, array('class' => 'form-control')) }}
                 </div>
                 <div class="form-group">
                     {{ Form::submit('Create Post', array('class' => 'btn btn-success')) }}

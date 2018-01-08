@@ -35,7 +35,6 @@
                     <!-- /.col -->
                 </div>
             </form>
-
             <div class="social-auth-links text-center">
                 <p>- OR -</p>
                 <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign
@@ -46,7 +45,6 @@
                     Google+</a>
             </div>
             <!-- /.social-auth-links -->
-
             <a href="{{ route('password.request') }}">I forgot my password</a><br>
             <a href="{{ route('register') }}" class="text-center">Register a new membership</a>
 

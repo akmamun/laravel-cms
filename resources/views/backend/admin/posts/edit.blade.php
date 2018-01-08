@@ -12,9 +12,15 @@
             <div class="form-group">
                 {{ Form::label('title', 'Title') }}
                 {{ Form::text('title', null, array('class' => 'form-control')) }}<br>
+                {{ Form::label('slug', 'Slug Field') }}
+                {{ Form::text('slug', null, array('class' => 'form-control')) }}<br>
+                {{ Form::label('background', 'Header Background') }}
+                {{ Form::file('background')}}
                 {{ Form::label('body', 'Post Body') }}
                 {{ Form::textarea('body', null, array('class' => 'form-control')) }}<br>
-                {{ Form::submit('Save', array('class' => 'btn btn-primary')) }}
+                {{ Form::label('category', 'Category') }}
+                {{ Form::textarea('category', null, array('class' => 'form-control')) }}<br>
+                {{ Form::submit('Update Post', array('class' => 'btn btn-primary')) }}
                 {{ Form::close() }}
             </div>
         </div>

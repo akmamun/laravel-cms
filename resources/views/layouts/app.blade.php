@@ -50,9 +50,10 @@
     <!-- iCheck -->
     <script src="{{ URL::asset('backend/iCheck/icheck.min.js') }}"></script>
     <script src="{{ URL::asset('backend/assets/js/adminlte.js') }}"></script>
-    <script src="{{ URL::asset('backend/ckeditor/ckeditor.js') }}"></script>
     <script src="{{ URL::asset('backend/assets/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ URL::asset('backend/assets/js/dataTables.bootstrap.min.js') }}"></script>
+      @if( request()->route()->getName() == 'posts.create' )
+    <script src="{{ URL::asset('backend/ckeditor/ckeditor.js') }}"></script>
     <script>
         $(function () {
             // Replace the <textarea id="editor1"> with a CKEditor
@@ -60,6 +61,7 @@
             CKEDITOR.replace('editor1');
         })
     </script>
+    @endif
     <!-- page script -->
     <script>
         $(function () {

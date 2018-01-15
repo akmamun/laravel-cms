@@ -16,13 +16,6 @@
              {{ Form::label('email', 'Email') }}
              {{ Form::email('email', null, array('class' => 'form-control')) }}
          </div>
-         <h5><b>Give Role</b></h5>
-         <div class='form-group'>
-             @foreach ($roles as $role)
-                 {{ Form::checkbox('roles[]',  $role->id, $user->roles ) }}
-                 {{ Form::label($role->name, ucfirst($role->name)) }}<br>
-             @endforeach
-         </div>
          {{ Form::submit('Add', array('class' => 'btn btn-primary')) }}
          {{ Form::close() }}
     </div>

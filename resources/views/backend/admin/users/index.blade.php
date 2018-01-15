@@ -24,8 +24,6 @@
                     <th>Name</th>
                     <th>Email</th>
                     <th>Date/Time Added</th>
-                    <th>User Roles</th>
-                    <th>Operations</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -34,7 +32,6 @@
                         <td>{{ $user->name }}</td>
                         <td>{{ $user->email }}</td>
                         <td>{{ $user->created_at->format('F d, Y') }}</td>
-                        <td>{{  $user->roles()->pluck('name')->implode(' ') }}</td>{{-- Retrieve array of roles associated to a user and convert to string --}}
                         <td>
                             <a href="{{ route('users.edit', $user->id) }}" class="btn btn-info pull-left" style="margin-right: 3px;">Edit</a>
                             {!! Form::open(['method' => 'DELETE', 'route' => ['users.destroy', $user->id] ]) !!}

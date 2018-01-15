@@ -20,8 +20,6 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 Route::resource('pages', 'PageController');
 Route::resource('users', 'UserController');
-Route::resource('roles', 'RoleController');
-Route::resource('permissions', 'PermissionController');
 Route::resource('posts', 'PostController');
 
 

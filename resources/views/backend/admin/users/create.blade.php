@@ -24,26 +24,18 @@
                     {{ Form::email('email', '', array('class' => 'form-control')) }}
                 </div>
 
-                <div class='form-group'>
-                    {{ Form::label('roll', 'Give Role') }}<br>
-                    @foreach ($roles as $role)
-                        {{ Form::checkbox('roles[]',  $role->id ) }}
-                        {{ Form::label($role->name, ucfirst($role->name)) }}<br>
 
-                    @endforeach
+                <div class="form-group">
+                    {{ Form::label('password', 'Password') }}<br>
+                    {{ Form::password('password', array('class' => 'form-control')) }}
+
                 </div>
 
-                {{--<div class="form-group">--}}
-                    {{--{{ Form::label('password', 'Password') }}<br>--}}
-                    {{--{{ Form::password('password', array('class' => 'form-control')) }}--}}
+                <div class="form-group">
+                    {{ Form::label('password', 'Confirm Password') }}<br>
+                    {{ Form::password('password_confirmation', array('class' => 'form-control')) }}
 
-                {{--</div>--}}
-
-                {{--<div class="form-group">--}}
-                    {{--{{ Form::label('password', 'Confirm Password') }}<br>--}}
-                    {{--{{ Form::password('password_confirmation', array('class' => 'form-control')) }}--}}
-
-                {{--</div>--}}
+                </div>
 
                 {{ Form::submit('Add', array('class' => 'btn btn-primary')) }}
 
